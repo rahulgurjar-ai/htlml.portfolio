@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packers and Movers</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+
+        header {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;        /* Center items vertically */
+}
+
+.header-title {
+    flex-grow: 1;               /* Allow the title to take available space */
+    text-align: center;         /* Center the title text */
+    margin: 0;                  /* Remove default margin */
+}
+
+
+        header .logo {
+            float: left;
+            vertical-align: top;
+        }
+
+        header .logo img {
+            width: 200px;
+            vertical-align: left;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 30px;
+        }
+
+        header nav ul li a {
+            color: #0a0a0a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            float: right;
+        }
+
+        /* New Navigation Bottom Text */
+        .nav-bottom-text {
+            text-align: center;
+            color: #ffffff; /* Change to desired color */
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1565131451934-30f57a1c7b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3NzF8MHwxfGFsbHwxfHx8fHx8fHwxNjYyODIzMTMx&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            color: #000000;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        #about {
+            padding: 40px 0;
+            background: #f0f8ff; /* Light blue background */
+            text-align: center;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 40px 0;
+            background: #fff4e4; /* New background color for Contact section */
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ffffff;
+        }
+
+        .social-media h3 {
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function showTime() {
+            document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+        }
+        showTime();
+        setInterval(function () {
+            showTime();
+        }, 1000);
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../3.4 Birthday Invite Project/IMAGES FOR THE WESITE/Designer (1).png" alt="Logo"/>
+            </div>
+            <h1 class="header-title">R$P MOVEase</h1> <!-- Centered title -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Reliable Packers and Movers for a Smooth Move</h2>
+            <p>Fast, Safe, and Efficient Moving Services for Your Home or Office</p>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>SIGN-IN</h2>
+            <form action="#" method="post">
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" required>
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" href="./index.html" class="cta-button">LOGIN </button>
+            </form>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are here to providing top-notch packing and moving services with the help of our previous experiences.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    
+            <div class="contact-details">
+                <h3>CONTACT US</h3>
+                <p>Phone: 6398544703, 8006365752</p>
+                <p>Email: R$PMOVEase@gmail.com</p>
+                <div id="map">
+                    <!-- Embed Google Map here -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
